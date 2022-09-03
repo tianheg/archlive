@@ -30,7 +30,7 @@ jobs:
       - name: Build ISO
         id: build
         run: |
-          mkarchiso -v
+          mkarchiso -v .
           find out
 
           # Set BUILD_DATE
