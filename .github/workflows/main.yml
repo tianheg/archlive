@@ -1,0 +1,49 @@
+name: Build ISO
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Adjust refresh schedule here. By default, it runs once per day.
+    # Syntax reference: https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule
+    # Recommended tool: https://crontab.guru/
+    - cron: '0 22 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.SECRET_TOKEN }}
+    container:
+      image: archlinux/archlinux:latest
+      options: --privileged
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Sanity check, if we are on SteamOS environment
+        run: |
+          cat /etc/os-release
+      - name: Install ArchISO
+        run: |
+          # Make sure container is up-to-date
+          pacman -Syu --needed --noconfirm
+          pacman -S git archiso --needed --noconfirm
+      - name: Build ISO
+        id: build
+        run: |
+          mkarchiso -v
+          find out
+
+          # Set BUILD_DATE
+          export BUILD_DATE=$(date +'%Y.%m.%d')
+          # Set upload name to BUILD_DATE
+          echo "::set-output name=date::${BUILD_DATE}"
+      - name: Upload
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'out/*.iso'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ steps.build.outputs.date }}
+
+## Refers
+# https://github.com/theVakhovskeIsTaken/holoiso/blob/b27d0cf0a6bb673da0763f2ce89cd071169f0ed0/.github/workflows/build.yml
+# https://github.com/crystal-linux/iso/blob/ff5c2373e9c04f859e9a068ea7db2843f0333731/.github/workflows/build.yml
