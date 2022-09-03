@@ -4,6 +4,7 @@
 
 - yay
 - otf-ibm-plex
+- lf: Terminal file manager 
 
 ## Build command
 
