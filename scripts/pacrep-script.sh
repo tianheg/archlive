@@ -3,10 +3,9 @@
 # Watch packages info inside packages.x86_64
 file="packages.x86_64"
 while read -r line; do
-echo -e "#####################################
-#####################################
+echo -e "############
 $line
-$(pacman -Si $line)" >> pacrep-info.txt
+$(pacman -Si $line | sed -n '4p')" >> pacrep-info.txt
 done <$file
 
 ## Refers
