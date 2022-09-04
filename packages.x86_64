@@ -44,5 +44,6 @@ tpm2-tss
 ttf-inconsolata
 unzip
 vim
+virtualbox-guest-utils-nox
 wget
 xfsprogs
