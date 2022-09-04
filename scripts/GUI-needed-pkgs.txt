@@ -1,0 +1,53 @@
+# general
+adobe-source-han-sans-cn-fonts
+adobe-source-han-serif-cn-fonts
+alsa-utils
+intel-media-driver
+intel-ucode
+archlinuxcn-keyring
+emacs
+fcitx-configtool
+fcitx-googlepinyin
+fcitx-im
+# first install fcitx4, then switch to fcitx5
+networkmanager
+lf
+# Terminal file manager 
+ttf-roboto
+mesa-vdpau
+otf-ibm-plex
+virtualbox-guest-utils
+vulkan-intel
+vulkan-radeon
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-vesa
+xorg
+xorg-server
+xorg-xinit
+yay
+# plasma KDE
+dolphin
+konsole
+plasma-meta
+plasma-wayland-session
+sddm
+
+
+# CLI tools
+bat
+bind
+darkhttpd
+gnu-netcat
+hdparm
+# SSD info
+hugo
+net-tools # offer netstat
+nmap
+proxychains-ng
+sdparm
+# An utility similar to hdparm but for SCSI devices
+smartmontools
+# SSD info
+tldr
+tcpdump
