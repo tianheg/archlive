@@ -54,7 +54,8 @@ sddm
 ## container
 docker
 docker-compose
-
+## audio,video
+vlc
 
 # CLI tools
 tldr
