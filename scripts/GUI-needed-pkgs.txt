@@ -5,21 +5,14 @@
 # https://www.yidajiabei.xyz/posts/arch-software-installation-and-usage/
 ###
 
-# general
 ## font
 adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
-libertinus-font
 noto-fonts
-noto-fonts-extra
 noto-fonts-emoji
 noto-fonts-cjk
-otf-ibm-plex
-ttf-dejavu
-ttf-droid
-ttf-inconsolata
-ttf-liberation
-ttf-roboto
+nerd-fonts-ibm-plex-mono
+#otf-ibm-plex # or ttf-ibm-plex from [Community]
 ## driver
 alsa-utils
 intel-media-driver
@@ -35,7 +28,9 @@ archlinuxcn-keyring
 yay
 ## editor
 emacs
+vim
 ## input method
+# 1st install these; 2nd rm these; 3rd install fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki fcitx5-material-color
 fcitx-configtool
 fcitx-googlepinyin
 fcitx-im
@@ -51,15 +46,29 @@ konsole
 plasma-meta
 plasma-wayland-session
 sddm
+gthumb
+firefox-developer-edition
+keepassxc
+spectacle
+google-chrome
 ## container
 docker
 docker-compose
+## virtual machines
+virtualbox
+virtualbox-host-modules-arch
+virtualbox-ext-oracle
+vagrant
 ## audio,video
 vlc
-
-# CLI tools
+## proxy
+clash
+proxychains-ng
+## man pages
 tldr
+## terminal file manager
 lf
+## replace cat
 bat
 ## web server
 darkhttpd
@@ -72,10 +81,32 @@ net-tools # offer netstat
 tcpdump
 wget
 nmap
-## proxy
-proxychains-ng
 ## SSD
 hdparm
 smartmontools
 ## SCSI
 sdparm
+## pacman mirror
+reflector
+## chat
+telegram-desktop
+## SSH
+openssh
+## Shell
+zsh
+## for z.lua
+lua
+## replace ls
+exa
+## github cli
+gh
+## system monitor
+htop
+## system info
+neofetch
+## cron timer
+cronie
+## memory manager
+earlyoom
+## Nodejs
+nvm # fnm
