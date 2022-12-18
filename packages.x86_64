@@ -112,6 +112,7 @@ smartmontools
 sof-firmware
 squashfs-tools
 sudo
+syslinux
 systemd-resolvconf
 terminus-font
 testdisk
