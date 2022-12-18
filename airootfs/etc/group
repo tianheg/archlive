@@ -1,5 +1,1 @@
 root:x:0:root
-adm:x:999:daemon
-wheel:x:10:archie
-sddm:x:972:
-users:x:984:
