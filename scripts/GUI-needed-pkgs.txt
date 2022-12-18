@@ -110,3 +110,5 @@ cronie
 earlyoom
 ## Nodejs
 nvm # fnm
+## markup
+pandoc
