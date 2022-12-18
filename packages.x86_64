@@ -28,14 +28,17 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
+firefox-developer-edition
 fsarchiver
 gnu-netcat
 gpart
 gpm
 gptfdisk
+git
 grml-zsh-config
 grub
 hdparm
+htop
 hyperv
 intel-ucode
 ipw2100-fw
@@ -43,8 +46,7 @@ ipw2200-fw
 irssi
 iw
 iwd
-jfsutils
-kitty-terminfo
+konsole
 less
 lftp
 libfido2
@@ -56,7 +58,6 @@ linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
-lynx
 man-db
 man-pages
 mc
@@ -70,6 +71,7 @@ mtools
 nano
 nbd
 ndisc6
+neofetch
 net-tools
 nfs-utils
 nilfs-utils
@@ -124,4 +126,6 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+xorg-server
+xorg-xinit
 zsh
