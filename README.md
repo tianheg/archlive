@@ -8,7 +8,7 @@
 ## Build command
 
 ```sh
-sudo mkarchiso -v -w /path/to/work_dir -o /path/to/work_dir .
+sudo mkarchiso -v -w /path/to/work_dir -o /path/to/work_dir/out .
 ```
 
 ## Docs
