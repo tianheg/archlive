@@ -1,5 +1,16 @@
 # Archiso
 
+## Packages can't use `packages.x86_64`
+
+- yay
+- otf-ibm-plex
+
+## Build command
+
+```sh
+sudo mkarchiso -v -w /path/to/work_dir .
+```
+
 ## Docs
 
 1. https://wiki.archlinux.org/title/Archiso
