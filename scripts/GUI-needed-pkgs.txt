@@ -1,52 +1,80 @@
+###
+# Docs
+#
+# https://www.yidajiabei.xyz/posts/arch-installation-guide/
+# https://www.yidajiabei.xyz/posts/arch-software-installation-and-usage/
+###
+
 # general
+## font
 adobe-source-han-sans-cn-fonts
 adobe-source-han-serif-cn-fonts
+libertinus-font
+noto-fonts
+noto-fonts-extra
+noto-fonts-emoji
+noto-fonts-cjk
+otf-ibm-plex
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+ttf-roboto
+## driver
 alsa-utils
 intel-media-driver
 intel-ucode
-archlinuxcn-keyring
-emacs
-fcitx-configtool
-fcitx-googlepinyin
-fcitx-im
-# first install fcitx4, then switch to fcitx5
-networkmanager
-lf
-# Terminal file manager 
-ttf-roboto
 mesa-vdpau
-otf-ibm-plex
 vulkan-intel
 vulkan-radeon
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-vesa
+## repo(archlinuxcn,aur)
+archlinuxcn-keyring
+yay
+## editor
+emacs
+## input method
+fcitx-configtool
+fcitx-googlepinyin
+fcitx-im
+## network
+networkmanager
+## X.org/X11
 xorg
 xorg-server
 xorg-xinit
-yay
-# plasma KDE
+## plasma KDE
 dolphin
 konsole
 plasma-meta
 plasma-wayland-session
 sddm
+## container
+docker
+docker-compose
 
 
 # CLI tools
+tldr
+lf
 bat
-bind
+## web server
 darkhttpd
 gnu-netcat
-hdparm
-# SSD info
+## static site generator
 hugo
+## network
+bind
 net-tools # offer netstat
-nmap
-proxychains-ng
-sdparm
-# An utility similar to hdparm but for SCSI devices
-smartmontools
-# SSD info
-tldr
 tcpdump
+wget
+nmap
+## proxy
+proxychains-ng
+## SSD
+hdparm
+smartmontools
+## SCSI
+sdparm
