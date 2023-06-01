@@ -34,7 +34,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: 'out/*.iso'
-          token: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ steps.build.outputs.date }}
 
 ## Refers
