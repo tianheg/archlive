@@ -28,10 +28,8 @@ jobs:
           mkarchiso -v .
           find out
 
-          # Set BUILD_DATE
           export BUILD_DATE=$(date +'%Y.%m.%d')
-          # Set upload name to BUILD_DATE
-          echo "::set-output name=date::${BUILD_DATE}"
+          echo "name=date::${BUILD_DATE}" >> $GITHUB_OUTPUT
       - name: Upload
         uses: ncipollo/release-action@v1
         with:
