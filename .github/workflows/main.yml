@@ -31,7 +31,7 @@ jobs:
           find out
 
           export BUILD_DATE=$(date +'%Y.%m.%d')
-          echo "name=date::${BUILD_DATE}" >> $GITHUB_OUTPUT
+          echo "date=${BUILD_DATE}" >> $GITHUB_OUTPUT
       - name: Upload
         uses: ncipollo/release-action@v1
         with:
