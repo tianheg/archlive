@@ -20,7 +20,7 @@ linux
 linux-firmware
 man-db
 man-pages
-memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
