@@ -37,6 +37,7 @@ jobs:
         with:
           artifacts: 'out/*.iso'
           tag: ${{ steps.build.outputs.date }}
+          allowUpdates: true
 
 ## Refers
 # https://github.com/theVakhovskeIsTaken/holoiso/blob/b27d0cf0a6bb673da0763f2ce89cd071169f0ed0/.github/workflows/build.yml
