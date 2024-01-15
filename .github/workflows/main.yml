@@ -30,13 +30,13 @@ jobs:
           mkarchiso -v .
           find out
 
-          export BUILD_DATE=$(date +'%Y.%m.%d')
+          export BUILD_DATE=$(date +'%Y.%m.%d-%s')
           echo "date=${BUILD_DATE}" >> $GITHUB_OUTPUT
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Release artifact
+        uses: ncipollo/release-action@v1
         with:
-          path: 'out/*.iso'
-          name: ${{ steps.build.outputs.date }}
+          artifacts: 'out/*.iso'
+          tag: ${{ steps.build.outputs.date }}
 
 ## Refers
 # https://github.com/theVakhovskeIsTaken/holoiso/blob/b27d0cf0a6bb673da0763f2ce89cd071169f0ed0/.github/workflows/build.yml
